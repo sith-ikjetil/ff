@@ -1,9 +1,9 @@
 /*
- *: Filename    : is-kbd-rkt.c
- *: Date        : 2021-10-18
+ *: Filename    : ff.c
+ *: Date        : 2021-11-08
  *: Author      : "Kjetil Kristoffer Solberg" <post@ikjetil.no>
- *: Version     : 1.2
- *: Description : A Linux Kernel Module that produces output that detects an SMM keyboard rootkit.
+ *: Version     : 1.0
+ *: Description : A Linux Kernel Module that outputs all binary 1's.
 */
 /*
  * #include
