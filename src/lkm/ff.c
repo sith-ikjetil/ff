@@ -127,11 +127,13 @@ static int __init ff_init(void)
     if (IS_ERR(char_device)){
         class_destroy(char_class);
 		unregister_chrdev(major_num, DEVICE_NAME);
-		printk(KERN_ALERT DEVICE_NAME "error creating device\n");
+		printk(KERN_ALERT DEVICE_NAME ": error creating device\n");
 		return PTR_ERR(char_device);
     }
     printk(KERN_INFO DEVICE_NAME ": device class created correctly\n");
     
+	printk(KERN_INFO DEVICE_NAME ": module loaded\n");
+	
 	//
 	// return success
 	//
